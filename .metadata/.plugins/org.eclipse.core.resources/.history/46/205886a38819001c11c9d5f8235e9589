@@ -1,0 +1,23 @@
+package br.com.coffeecalculation.drinkenums;
+
+public enum AddOptionEnum {
+	
+	ADD_MORE{
+
+		@Override
+		public AddOptionEnum getAddOptionEnum(int value) {
+			return null  ;
+		}
+	},
+	NULL{
+
+		@Override
+		public AddOptionEnum getAddOptionEnum(int value) {
+			return null;
+		}
+		
+	};
+	
+	public abstract AddOptionEnum getAddOptionEnum(int value);
+	
+}

@@ -1,0 +1,69 @@
+package br.com.coffeecalculation.drinkenums;
+
+import br.com.coffeecalculation.coffeeshop.Add;
+import br.com.coffeecalculation.entite.add.ChocolatePowder;
+import br.com.coffeecalculation.entite.add.CinnamonPowder;
+import br.com.coffeecalculation.entite.add.CondensedMilk;
+import br.com.coffeecalculation.entite.add.Cookie;
+import br.com.coffeecalculation.entite.add.LemonZest;
+import br.com.coffeecalculation.entite.add.NinhoMilk;
+import br.com.coffeecalculation.entite.add.None;
+import br.com.coffeecalculation.entite.add.SourCreamIce;
+
+public enum AddEnum {
+	
+	LEMONZEST {
+		@Override
+		public Add getAddEnum(int value) {
+			return new LemonZest();
+		}
+	} ,
+	CINNAMONP_POWDER {
+		@Override
+		public Add getAddEnum(int value) {
+			return new CinnamonPowder();
+		}
+	},
+	NINHO_MILK {
+		@Override
+		public Add getAddEnum(int value) {
+			return new NinhoMilk();
+		}
+	},
+	SOUR_CREAM_ICE {
+		@Override
+		public Add getAddEnum(int value) {
+			return new SourCreamIce();
+		}
+	},
+	CONDENSED_MILK {
+		@Override
+		public Add getAddEnum(int value) {
+			return new CondensedMilk();
+		}
+	},
+	CHOCOLATE_POWDER {
+		@Override
+		public Add getAddEnum(int value) {
+			return new ChocolatePowder();
+		}
+	},
+	COOKIE {
+		@Override
+		public Add getAddEnum(int value) {
+			return new Cookie();
+		}
+	},
+	NONE {
+
+		@Override
+		public Add getAddEnum(int value) {
+			return new None();
+		}
+		
+	};
+	
+	public abstract Add getAddEnum(int value);
+	
+
+}

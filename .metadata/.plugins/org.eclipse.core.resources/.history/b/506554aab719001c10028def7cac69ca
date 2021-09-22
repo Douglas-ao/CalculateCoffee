@@ -1,0 +1,57 @@
+package br.com.coffeecalculation.runn;
+
+import javax.swing.JOptionPane;
+
+import br.com.coffeecalculation.coffeeshop.Add;
+import br.com.coffeecalculation.coffeeshop.CoffeeShop;
+import br.com.coffeecalculation.coffeeshop.Size;
+import br.com.coffeecalculation.drinkenums.AddEnum;
+import br.com.coffeecalculation.drinkenums.DrinkEnum;
+import br.com.coffeecalculation.drinkenums.SizeEnum;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String[] buttons = { "Café", "Café com Leite", "Leite com Chocolate", "Mocha", "Espresso Panna", "Cancelar" };
+		int returnValue = JOptionPane.showOptionDialog(null, "Escolha um tipo de bebida para prosseguir: ",
+				"Escolha de bebidas", JOptionPane.WARNING_MESSAGE, 0, null, buttons, buttons[0]);
+
+		DrinkEnum drinkEnum = DrinkEnum.values()[returnValue];
+		CoffeeShop drink = drinkEnum.getDrinkEnum(returnValue);
+
+		String[] button = { "Pequeno", "Médio", "Grande", "Cancelar" };
+		int returnValueSize = JOptionPane.showOptionDialog(null, "Escolha o Tamanho: ", "Escolha de tamanhos",
+				JOptionPane.WARNING_MESSAGE, 0, null, button, button[0]);
+
+		SizeEnum sizeEnum = SizeEnum.values()[returnValueSize];
+		Size size = sizeEnum.getSizeEnum(returnValueSize);
+		
+		int returnValueAdd = 1;
+		double total = 0;
+		double adds = 0;
+		
+		while (returnValueAdd > 0){
+		String[] buttonAdd = { "Raspas de limão", "Canela em pó", "Leite ninho (colher)", "Gelo de creme de leite",
+				"Leite condensado (colher)", "Chocolate em pó (colher)", "Cookie", "Nenhuma" };
+		returnValueAdd = JOptionPane.showOptionDialog(null, "Escolha o Adicional: ", "Escolha os adicionais",
+				JOptionPane.WARNING_MESSAGE, 0, null, buttonAdd, buttonAdd[0]);
+
+		AddEnum addEnum = AddEnum.values()[returnValueAdd];
+		Add add = addEnum.getAddEnum(returnValueAdd);
+		adds = add.calculate(0);
+		returnValueAdd = (int) adds;
+		
+		double drinks = drink.calculate(0);
+		double totalSize = drinks * size.calculate(0) / 100;
+		adds = add.calculate(0);
+		total = drinks + totalSize + adds;
+		}
+		double drinks = drink.calculate(0);
+		double totalSize = drinks * size.calculate(0) / 100;
+		total = drinks + totalSize + adds;
+		
+		JOptionPane.showMessageDialog(null, "Valor Total: " + String.format("%.2f", total));
+
+	}
+
+}

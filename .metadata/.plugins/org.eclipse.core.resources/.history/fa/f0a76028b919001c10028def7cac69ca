@@ -1,0 +1,9 @@
+package br.com.coffeecalculation.exceptions;
+
+public class Exception extends RuntimeException {
+
+    public Exception() {
+        super("Failed!.");
+    }
+}
+

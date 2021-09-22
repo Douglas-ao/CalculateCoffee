@@ -1,0 +1,6 @@
+package br.com.coffeecalculation.coffeeshop;
+
+public interface Size {
+	
+	double calculate(int value);
+}

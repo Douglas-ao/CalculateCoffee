@@ -1,0 +1,16 @@
+package br.com.coffeecalculation.entite.drink;
+
+import br.com.coffeecalculation.coffeeshop.Drink;
+
+public class Mocha implements Drink{
+	
+	private final double MOCHA = 4.00;
+	
+	@Override
+	public double calculate(int value) {
+		return MOCHA;
+	}
+	
+	
+
+}

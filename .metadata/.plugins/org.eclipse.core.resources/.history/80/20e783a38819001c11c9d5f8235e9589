@@ -1,0 +1,16 @@
+package br.com.coffeecalculation.drinkenums;
+
+public enum AddOptionEnum {
+	
+	ADD_MORE{
+
+		@Override
+		public AddEnum[] getAddOptionEnum(int value) {
+			return AddEnum.values()  ;
+		}
+		
+	};
+	
+	public abstract AddEnum[] getAddOptionEnum(int value);
+	
+}

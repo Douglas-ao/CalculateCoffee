@@ -1,0 +1,14 @@
+package br.com.coffeecalculation.entite.add;
+
+import br.com.coffeecalculation.coffeeshop.Add;
+
+public class NinhoMilk implements Add {
+	
+	private final double NINHO_MILK = 1.40;
+	
+	@Override
+	public double calculate(int value) {
+		return NINHO_MILK;
+	}
+
+}

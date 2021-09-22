@@ -1,0 +1,7 @@
+package br.com.coffeecalculation.coffeeshop;
+
+public interface CoffeeShop {
+	
+	double calculate(int value);
+	
+}

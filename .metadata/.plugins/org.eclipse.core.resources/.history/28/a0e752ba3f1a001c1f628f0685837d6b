@@ -1,0 +1,14 @@
+package br.com.coffeecalculation.entite.size;
+
+import br.com.coffeecalculation.entitie.coffeeshop.Size;
+
+public class Medium implements Size{
+
+	private final int MEDIUM = 20;
+	
+	@Override
+	public double calculate(int value) {
+		return MEDIUM;
+	}
+
+}

@@ -1,0 +1,16 @@
+package br.com.coffeecalculation.entite.drink;
+
+import br.com.coffeecalculation.coffeeshop.Drink;
+
+public class Coffee implements Drink {
+	
+	private final double COFFEE = 1.50;
+
+	@Override
+	public double calculate(int value) {
+		return COFFEE;
+	}
+	
+	
+
+}

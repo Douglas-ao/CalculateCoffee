@@ -1,0 +1,14 @@
+package java.br.com.coffeecalculation.entitie.add;
+
+import java.br.com.coffeecalculation.entitie.coffeeshop.Add;
+
+public class Cookie implements Add {
+	
+	private final double COOKIE = 0.90;
+
+	@Override
+	public double calculate(int value) {
+		return COOKIE;
+	}
+
+}
