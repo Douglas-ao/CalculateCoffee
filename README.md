@@ -1,5 +1,5 @@
 <h3>Atividade<h3><p>
-<h4>Marcela adquiriu uma cafeteria recentemente e precisa elaborar um plano de cálculos para as suas bebidas, Para isso ela precisa de um sistema que calcule o valor da bebida conforme a escolha do cliente.<p>
+<h4>Marcela adquiriu uma cafeteria recentemente e precisa elaborar um plano de cálculos para as suas bebidas, Para isso ela precisa de um sistema que calcule o valor da bebida conforme a escolha do cliente.</h4><p>
 ---------------------<p>
 Bebidas:<br>
 Café R$ 1,50<br>
@@ -9,7 +9,7 @@ Mocha R$ 4,00<br>
 Espresso Panna R$ 4,50<p>
 -------------------<p>
 Todos os preços listados na tabela são para a xícara pequena, caso o cliente escolha a xícara média, tem um aumento de 20% no valor, e se for, a xícara grande, o acréscimo é de 35% no valor.<br>
-Além das bebidas, o cliente também pode escolher alguns adicionais, que servem em qualquer bebida, veja a tabela com os valores.
+Além das bebidas, o cliente também pode escolher alguns adicionais, que servem em qualquer bebida, veja a tabela com os valores.<p>
 -------------------- <p>
 Adicionais:<br>
 Raspas de limão R$ 0,50<br>
